@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="customersApp">
+    <head>
+        <title>Directives</title>
+        <link href="style/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="style/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+      <header>
+          <nav class="navbar navbar-default">
+              <ul class="nav navbar-nav">
+                  <li><a href="#!/customers">Customers</a></li>
+                  <li><a href="#!/orders">Orders</a></li>
+              </ul>
+          </nav>
+      </header>
+
+      <main>
+          <div ng-view></div>
+      </main>
+      <!--scripts-->
+    <script src="./angular/angular.min.js"></script>
+    <script src="./angular/angular-route.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./app/controller/customersController.js"></script>
+    <script src="./app/controller/ordersController.js"></script>
+    <script src="./app/controller/allOrdersController.js"></script>
+    <script src="./app/services/customersFactory.js"></script>
+    <script src="./app/services/value.js"></script>
+
+    </body>
+</html>
